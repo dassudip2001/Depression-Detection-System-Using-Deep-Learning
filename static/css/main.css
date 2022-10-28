@@ -821,7 +821,7 @@ legend {
       align-items: center;
   font-family: 'Poppins', sans-serif;
   /* ======background-color: #a598ee; ======*/
-  background-image : url(./images/twitter.jpg);
+  background-image : url(../images/twitter.jpg);
   background-size: cover;
   background-position: center center;
   padding: 15px;

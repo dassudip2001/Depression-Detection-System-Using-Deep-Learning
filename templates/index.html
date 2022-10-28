@@ -7,10 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link href="css/main.css" rel="stylesheet" />
+    <!-- <link href="../css/main.css" rel="stylesheet" /> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+
     <!--Title-->
     <title>Depression Analysis</title>
     <link rel="icon" href="./images/icon/icons8-depression-64.png" type="image/png" />
+    <!-- <img src="{{url_for('static', filename='images/colormap_white.png')}}"> -->
   </head>
   <body>
     <div class="s003">
@@ -38,7 +41,8 @@
         </div>
       </form>
     </div>
-    <script src="js/extention/choices.js"></script>
+    <script src="{{ url_for('static',filename='js/extention/choices.js') }}"> </script>
+    <!-- <script src="js/extention/choices.js"></script> -->
     <script>
       function myFunction() {
         document.getElementById("search").placeholder = "Enter Username ";
